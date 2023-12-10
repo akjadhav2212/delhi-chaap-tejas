@@ -9,22 +9,21 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <style>
+      /* Optional: Add custom styles here */
       body {
         font-family: "Times New Roman", Times, serif;
         line-height: 1.6;
-        background-color: #fcf8f5; /* Creamy */
+        background-color: beige;
       }
 
-      .section {
+      .about-section {
         max-width: 800px;
         margin: 0 auto;
         text-align: center;
-        margin-bottom: 50px;
-        box-shadow: 0px 0px 10px #e5c2a9; /* Light Brown */
-        background-color: #fff6eb; /* Light Peach */
-        padding: 20px;
-        box-sizing: border-box;
-        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-shadow: 0px 0px 10px #888888;
+        background-color: blanchedalmond;
       }
 
       .profile-image {
@@ -34,106 +33,130 @@
         margin-bottom: 20px;
       }
 
-      .nav-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0px 0px 5px #e5c2a9; /* Light Brown */
-        background-color: #fff6eb; /* Light Peach */
-        padding: 10px;
+      .contact-section {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        padding: 20px;
         box-sizing: border-box;
-        margin-bottom: 50px;
-      }
-
-      .nav-bar img {
-        width: 150px;
-        height: auto;
-        cursor: pointer;
-      }
-
-      .nav-links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 10px;
-      }
-
-      .nav-link {
-        padding: 5px;
-        padding-top: 20px;
-        cursor: pointer;
-        color: #8d6044; /* Brown */
-      }
-
-      h1 {
-        font-weight: bold;
-        margin-bottom: 30px;
-        color: #8d6044; /* Brown */
-      }
-
-      #dishes-section {
-        margin-top: 50px;
-      }
-
-      #carouselExample {
-        border: 1px solid #d4aa6a; /* Darker Brown */
-        background-color: #fff6eb; /* Light Peach */
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px #e5c2a9; /* Light Brown */
+        box-shadow: 0px 0px 10px #888888;
+        background-color: blanchedalmond;
       }
 
       .contact-details {
         margin-top: 20px;
       }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .contact-section {
+          padding: 10px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="nav-bar">
-      <img
-        src="images/delhiChaap.png"
-        alt="Delhi-Chaap Logo"
-        onclick="scrollToSection('home-section')"
-      />
-      <div class="nav-links">
-        <div class="nav-link" onclick="scrollToSection('about-section')">
+    <div
+      id="home-section"
+      class="nav-bar"
+      style="
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-shadow: 0px 0px 1px #888888;
+        margin-bottom: 50px;
+        background-color: blanchedalmond;
+      "
+    >
+      <img src="images/delhiChaap.png" alt="" width="200px" height="100px" />
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        "
+      >
+        <div
+          style="padding: 5px; padding-top: 30px"
+          onClick="scrollToSection('home-section')"
+        >
+          HOME
+        </div>
+        <div
+          style="padding: 5px; padding-top: 30px"
+          onClick="scrollToSection('about-section')"
+        >
           ABOUT
         </div>
-        <div class="nav-link" onclick="scrollToSection('dishes-section')">
+        <div
+          style="padding: 5px; padding-top: 30px"
+          onClick="scrollToSection('dishes-section')"
+        >
           DISHES
         </div>
-        <div class="nav-link" onclick="scrollToSection('contact-section')">
+        <div
+          style="padding: 5px; padding-top: 30px"
+          onClick="scrollToSection('contact-section')"
+        >
           CONTACT
         </div>
       </div>
     </div>
 
-    <div class="section" id="about-section">
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      "
+    >
       <h1>ABOUT ME</h1>
-      <img
-        src="/images/profile-photo.jpg"
-        alt="Profile Image"
-        class="profile-image"
-      />
-      <p>
-        Hello! I'm Tejas, a passionate Mechanical Design Engineer. I have a
-        strong background in designing and optimizing mechanical systems,
-        bringing innovative solutions to real-world problems. The vibrant street
-        food culture, with its diverse flavors and aromatic spices, has inspired
-        me to explore the fusion of mechanical precision and culinary
-        creativity.
-      </p>
-      <p>
-        As a food enthusiast, I am proud to be a part of the Delhi Chapp
-        community. Delhi Chapp is not just a business for me; it's a culinary
-        journey where precision engineering meets the art of creating
-        mouth-watering delicacies. Let's explore innovation in both engineering
-        and cuisine!
-      </p>
     </div>
 
-    <div class="section" id="dishes-section">
+    <div id="about-section" style="display: flex; justify-content: center">
+      <div class="about-section">
+        <img
+          src="/images/profile-photo.jpg"
+          alt="Profile Image"
+          class="profile-image"
+        />
+        <p>
+          Hello! I'm Tejas, a passionate Mechanical Design Engineer. I have a
+          strong background in designing and optimizing mechanical systems,
+          bringing innovative solutions to real-world problems. The vibrant
+          street food culture, with its diverse flavors and aromatic spices, has
+          inspired me to explore the fusion of mechanical precision and culinary
+          creativity.
+        </p>
+        <p>
+          As a food enthusiast, I am proud to be a part of the Delhi Chapp
+          community. Delhi Chapp is not just a business for me; it's a culinary
+          journey where precision engineering meets the art of creating
+          mouth-watering delicacies.Let's explore innovation in both engineering
+          and cuisine!
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="dishes-section"
+      style="display: flex; justify-content: center; margin-top: 100px"
+    >
       <h1>DISHES</h1>
-      <div class="container mt-4">
+    </div>
+    <div style="display: flex; justify-content: center">
+      <div
+        class="container mt-4"
+        style="
+          border: 1px solid grey;
+          background-color: blanchedalmond;
+          border-radius: 2px;
+          box-shadow: 0px 0px 10px #888888;
+        "
+      >
         <div id="carouselExample" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -248,24 +271,33 @@
       </div>
     </div>
 
-    <div class="section" id="contact-section">
+    <div
+      id="dishes-section"
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      "
+    >
       <h1>CONTACT ME</h1>
+    </div>
+    <div id="contact-section" class="contact-section">
       <div class="contact-details">
         <p><strong>Name:</strong> Tejas Patil</p>
         <p><strong>Address:</strong> Near Krushna Chowk, Sangvi, Pune-411027</p>
-        <p><strong>Phone:</strong> 911111111</p>
-        <p><strong>Email:</strong> abc@gmail.com</p>
+        <p><strong>Phone:</strong>911111111</p>
+        <p><strong>Email:</strong>abc@gmail.com</p>
       </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-      function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    </script>
   </body>
 </html>
+<script>
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+</script>

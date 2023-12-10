@@ -11,8 +11,9 @@
     <style>
       /* Optional: Add custom styles here */
       body {
-        font-family: "Arial", sans-serif;
+        font-family: "Times New Roman", Times, serif;
         line-height: 1.6;
+        background-color: beige;
       }
 
       .about-section {
@@ -21,6 +22,8 @@
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;
+        box-shadow: 0px 0px 10px #888888;
+        background-color: blanchedalmond;
       }
 
       .profile-image {
@@ -33,10 +36,11 @@
       .contact-section {
         max-width: 600px;
         margin: 0 auto;
-        margin-top: 100px;
         margin-bottom: 100px;
         padding: 20px;
         box-sizing: border-box;
+        box-shadow: 0px 0px 10px #888888;
+        background-color: blanchedalmond;
       }
 
       .contact-details {
@@ -61,6 +65,7 @@
         flex-wrap: wrap;
         box-shadow: 0px 0px 1px #888888;
         margin-bottom: 50px;
+        background-color: blanchedalmond;
       "
     >
       <img src="images/delhiChaap.png" alt="" width="200px" height="100px" />
@@ -100,9 +105,19 @@
       </div>
     </div>
 
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      "
+    >
+      <h1>About Me</h1>
+    </div>
+
     <div id="about-section" style="display: flex; justify-content: center">
       <div class="about-section">
-        <h1>About Me</h1>
         <img
           src="/images/profile-photo.jpg"
           alt="Profile Image"
@@ -256,9 +271,18 @@
       </div>
     </div>
 
-    <div id="contact-section" class="contact-section">
+    <div
+      id="dishes-section"
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      "
+    >
       <h1>Contact Me</h1>
-
+    </div>
+    <div id="contact-section" class="contact-section">
       <div class="contact-details">
         <p><strong>Name:</strong> Tejas Patil</p>
         <p><strong>Address:</strong> Near Krushna Chowk, Sangvi, Pune-411027</p>
